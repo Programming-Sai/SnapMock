@@ -1,4 +1,10 @@
-# SnapMock GitHub Action
+# SnapMock GitHub
+
+<p align='center'>
+
+![Demo](./SnapMock.png)
+
+</p>
 
 **Automate device mockup screenshots in your GitHub workflows.**
 
