@@ -37,7 +37,7 @@ runs:
     - name: Run SnapMock script
       run: |
         cd ${{ github.action_path }}
-        node index.js
+        node index.js "${{ inputs.url }}" "${{ inputs.devices }}" "${{ inputs.output }}" "${{ inputs.selectors }}"
       shell: bash
       env:
         URL: ${{ inputs.url }}

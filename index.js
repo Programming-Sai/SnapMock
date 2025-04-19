@@ -17,11 +17,12 @@ const cliPath = path.resolve(
 
 
 
-const url = core.getInput('url');
-const devices = core.getInput('devices');
-const output = core.getInput('output');
-const selectors = core.getInput('selectors');
+// const url = core.getInput('url');
+// const devices = core.getInput('devices');
+// const output = core.getInput('output');
+// const selectors = core.getInput('selectors');
 
+const [,, url, devices, output, selectors] = process.argv;
 
 
 
