@@ -1,0 +1,25 @@
+{
+  "name": "snapmock",
+  "version": "1.0.0",
+  "description": "Automated device mockups for your website in GitHub workflows. SnapMock captures screenshots, embeds them into responsive device frames, and keeps your README visuals fresh—automatically.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Programming-Sai/SnapMock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Programming-Sai/SnapMock/issues"
+  },
+  "homepage": "https://github.com/Programming-Sai/SnapMock#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "github-readme-site-preview": "github:Programming-Sai/Github-README-Site-Preview"
+  }
+}

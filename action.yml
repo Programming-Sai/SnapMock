@@ -1,0 +1,22 @@
+name: SnapMock Screenshot Generator
+description: Take styled mockup screenshots of any webpage with optional element interactions.
+author: Programming-Sai
+
+inputs:
+  url:
+    description: "The URL of the page to screenshot"
+    required: true
+  devices:
+    description: "Comma-separated list of devices to use (e.g. laptop,mobile)"
+    required: true
+  output:
+    description: "Directory to save the output screenshots"
+    required: true
+  selectors:
+    description: "Comma-separated list of CSS selectors to interact with (optional)"
+    required: false
+    default: "null"
+
+runs:
+  using: "node16"
+  main: "index.js"
