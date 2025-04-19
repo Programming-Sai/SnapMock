@@ -81,10 +81,13 @@ When added to your workflow, SnapMock:
                         GIT_AUTHOR_EMAIL: "snapmock@users.noreply.github.com"
    ```
 
-2. **Inspect your `previews` branch** (or your chosen branch). The `./snapshots` folder will contain files named:
+2. \*\*Inspect your output branch. It should will contain files named:
 
    ```text
    output_<device>.png       # when no selectors
+
+   OR
+
    output_<device>[_theme1|_theme2].png # with selectors
    ```
 
