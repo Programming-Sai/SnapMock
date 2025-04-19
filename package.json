@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/Programming-Sai/SnapMock#readme",
   "dependencies": {
-    "@actions/core": "^1.11.1",
     "github-readme-site-preview": "github:Programming-Sai/Github-README-Site-Preview"
   }
 }
