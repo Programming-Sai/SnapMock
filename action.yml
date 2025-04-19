@@ -20,24 +20,25 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Checking current Dir
-      run: |
-        pwd
-        ls
-        
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16   # Changed from 18 to 16 as a potential fix
+        node-version: 18
 
     - name: Install dependencies
       run: |
-        npm install      # Changed from npm ci to npm install for fresh install
-        npm list          # This will list the installed dependencies for debugging
+        echo "Current Dir: $(pwd)"
+        cd ${{ github.action_path }}
+        echo "Action Dir: $(pwd)"
+        npm ci
+        npm list
+      shell: bash
 
     - name: Run SnapMock script
       run: |
+        cd ${{ github.action_path }}
         node index.js
+      shell: bash
       env:
         URL: ${{ inputs.url }}
         DEVICES: ${{ inputs.devices }}
