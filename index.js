@@ -33,7 +33,7 @@ const selectors = core.getInput('selectors');
 
 
 
-const cmd = `node ${cliPath} "${url}" "${devices}" "${output}" "${selectors}`;
+const cmd = `node ${cliPath} "${url}" "${devices}" "${output}" "${selectors}"`;
 
 exec(cmd, (error, stdout, stderr) => {
   if (error) {
