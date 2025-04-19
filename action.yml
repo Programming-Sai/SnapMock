@@ -18,5 +18,21 @@ inputs:
     default: "null"
 
 runs:
-  using: "node16"
-  main: "index.js"
+  using: "composite"
+  steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run SnapMock script
+      run: |
+        node index.js
+      env:
+        URL: ${{ inputs.url }}
+        DEVICES: ${{ inputs.devices }}
+        OUTPUT: ${{ inputs.output }}
+        SELECTORS: ${{ inputs.selectors }}
