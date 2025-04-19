@@ -14,11 +14,11 @@ SnapMock visits your deployed site, captures responsive screenshots inside devic
 
 When added to your workflow, SnapMock:
 
-    - Visits a given URL (e.g., your deployed site)
-    - Takes screenshots for specified device sizes
-    - Embeds them into realistic mockups (e.g., laptops)
-    - Saves the final images into a snapshots folder
-    - Lets you deploy or use those screenshots as needed (e.g., in a README, a docs site, or a branch)
+- Visits a given URL (e.g., your deployed site)
+- Takes screenshots for specified device sizes
+- Embeds them into realistic mockups (e.g., laptops)
+- Saves the final images into a snapshots folder
+- Lets you deploy or use those screenshots as needed (e.g., in a README, a docs site, or a branch)
 
 ---
 
