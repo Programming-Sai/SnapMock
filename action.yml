@@ -1,6 +1,10 @@
 name: SnapMock Screenshot Generator
 description: Take styled mockup screenshots of any webpage with optional element interactions.
 author: Programming-Sai
+branding:
+  icon: "zap"      
+  color: "gray-dark"     
+
 
 inputs:
   url:
