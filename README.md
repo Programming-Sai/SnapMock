@@ -57,7 +57,7 @@ When added to your workflow, SnapMock:
                         run: mkdir -p ${{ github.workspace }}/<OUTPUT-DIR>  # Ensures the directory exists before SnapMock
 
                 - name: Run SnapMock
-                    uses: Programming-Sai/SnapMock@v1
+                    uses: Programming-Sai/SnapMock@v1.0.0
                     with:
                         url: "https://your-live-site.com"
                         devices: "laptop,tablet,mobile"
